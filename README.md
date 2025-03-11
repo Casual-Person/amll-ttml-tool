@@ -1,5 +1,5 @@
 > **WARNING**
-> 本工具仍在开发当中，仍有很多缺失的功能和 BUG，请仅用作尝鲜用途，并随时保存你的歌词文件以防万一！
+> This tool is still under development, there are still a lot of missing features and bugs, please use it as a trial only, and save your lyrics file at any time just in case!
 
 <div align=center>
 
@@ -7,39 +7,38 @@
 
 # Apple Music-like Lyrics TTML Tool
 
-一个全新的逐词歌词编辑器！针对 [Apple Music-like Lyrics 生态](https://github.com/Steve-xmh/applemusic-like-lyrics)制作！
+A brand new word-for-word lyrics editor! Made for [Apple Music-like Lyrics Ecosystem] (https://github.com/Steve-xmh/applemusic-like-lyrics)!
 
 </div>
 
-## 使用
+## use
 
 > [!WARNING]
-> 本工具不建议移动手机或小尺寸电子设备使用，操作会非常繁琐！
+> This tool is not recommended for mobile phones or small size electronic devices, and the operation will be very cumbersome!
 
-你可以通过访问 [`https://steve-xmh.github.io/amll-ttml-tool/`](https://steve-xmh.github.io/amll-ttml-tool/)来使用本工具的在线版本。
+You can use the online version of the tool by visiting ['https://steve-xmh.github.io/amll-ttml-tool/'](https://steve-xmh.github.io/amll-ttml-tool/).
 
-也可以使用 Github Action 构建的 Tauri 桌面版本，具体见 [Github Action 构建 Tauri 桌面版本](https://github.com/Steve-xmh/amll-ttml-tool/actions/workflows/build-test.yaml)。
+You can also use the desktop version of Tauri built using Github Action, see [Build a desktop version of Tauri with Github Action] (https://github.com/Steve-xmh/amll-ttml-tool/actions/workflows/build-test.yaml).
 
-## 编辑器功能
+## Editor features
 
-- 基本输入、编辑、打轴功能
-- 读取保存 TTML 格式歌词
-- 配置歌词行行为（背景歌词、对唱歌词等）
-- 配置歌词文件元数据（名称，作者，网易云音乐 ID 等）
-- 拆分/组合/移动单词
-- LRC/ESLyric/YRC/QRC/Lyricify Syllable 等歌词文件格式的导入导出
-- 支持带有特殊标识符的纯文本导入歌词
-- 可配置的快捷键
-- 可以编写插件扩展 AMLL TTML Tools 的功能
+- Basic input, editing, and spinning functions
+- Read and save lyrics in TTML format
+- Configure lyrics behavior (background lyrics, duet lyrics, etc.)
+- Configure lyrics file metadata (name, author, NetEase Cloud Music ID, etc.)
+- Split/combine/move words
+- Import and export lyrics file formats such as LRC/ESLyric/YRC/QRC/Lyricify Syllable
+- Support for plain text import lyrics with special identifiers
+- Configurable shortcuts
+- You can write plug-ins to extend the functionality of AMLL TTML Tools
 
-## 开发构建
+## Develop and build
 
-本工具构建可能相对比较复杂，如果文字描述太过繁杂的话可以直接参考 [`build-web.yaml`](.github/workflows/build-web.yaml) 工作流的步骤自行进行。
+The build of this tool may be relatively complex, if the text description is too complicated, you can directly refer to the steps of the ['build-web.yaml'](.github/workflows/build-web.yaml) workflow to do it yourself.
 
-首先，本项目仅可使用 PNPM，请确保你已经安装好了 PNPM 包管理器！
+First of all, this project is PNPM only, make sure you have the PNPM package manager installed!
 
-然后克隆本仓库，然后在仓库文件夹下执行构建：
-
+Then clone the repository and execute the build under the repository folder:
 ```bash
 pnpm i # 安装依赖
 pnpm dev # 开启开发服务器
@@ -48,13 +47,13 @@ pnpm tauri dev # 开启 Tauri 桌面版本开发环境
 pnpm tauri build # 构建 Tauri 桌面版本
 ```
 
-## 截图
+## Screenshot
 
 <img width="912" alt="image" src="https://github.com/Steve-xmh/amll-ttml-tool/assets/39523898/e12220b5-0490-43da-bbbe-44ea2d64eef3">
 <img width="912" alt="image" src="https://github.com/Steve-xmh/amll-ttml-tool/assets/39523898/53b74012-ed11-405c-8411-59bc2036abb9">
 
-## 贡献
+## contribute
 
-欢迎各种积极的代码/翻译贡献！也欢迎积极提交各种议题和建议！
+All kinds of positive code/translation contributions are welcome! We also welcome to actively submit various topics and suggestions!
 
-如果想要提供新的语言翻译，可以参考 [`./src/i18n/index.ts`](./src/i18n/index.ts) 和 [`./src/i18n/zh-cn.ts`](./src/i18n/zh-cn.ts) 哦！
+If you want to provide new language translations, you can refer to ['./src/i18n/index.ts'](./src/i18n/index.ts) and ['./src/i18n/zh-cn.ts'](./src/i18n/zh-cn.ts) Oh!
